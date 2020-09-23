@@ -1,0 +1,622 @@
+/* general */
+body {
+	width: 360px;
+	margin: auto;
+	margin-top: 10px;
+	direction: rtl;
+	border: 2px solid gray;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+}
+.container {
+	width: 95%;
+	margin: auto;
+}
+
+.padding {
+	height: 8px;
+	background-color: gray;
+	width: 100%;
+	margin-bottom: 5px;
+}
+/* ../ general */
+
+/* cover */
+.cover {
+	width: 100%;
+	height: 200px;
+	background-image: url(./imges/cover.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin-top: 10px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.cover button {
+	background-image: url(./icon/camera.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	/* padding: 5px; */
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	position: absolute;
+    bottom: 10px;
+	left: 10px;
+} 
+/*../ cover */
+
+/* profile  */
+.profile {
+	height: 100px;
+	background-color: #ffffff;
+	position: relative;
+	
+}
+
+.profile-photo {
+	height: 175px;
+	width: 175px;
+	border-radius: 50%;
+	background-image: url(./imges/profile.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 2px;
+	border: 1px solid #f1f1f1;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.profile button {
+	background-image: url(./icon/camera.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 5px;
+	border-radius: 50%;
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	top: 38%;
+	left: 25%;
+}
+.profile-name h2 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+
+.story .more {
+	width: 11%;
+	height: 30px;
+	border-radius: 8px;
+	/* font-size: 15px; */
+	background-color: rgb(238, 226, 226);
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;
+	font-weight: 800;
+	padding-bottom: 4px;
+	margin-bottom: 7px;
+}
+.story .addStory {
+	width: 80%;
+	height: 30px;
+	border-radius: 8px;
+	background-color: rgb(238, 226, 226);
+	text-align: center;
+	font-weight: 800;
+	padding: 4px;
+	font-size: 15px;
+	background-color: rgb(4, 4, 252);
+	color: #ffffff;
+}
+.plus{
+	display: inline-block;
+	background-color: #f1f1f1;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	margin-right: 5px;
+	color: blue;
+	text-align: center;
+	margin: auto;
+	line-height: 15px;
+
+	
+}
+
+/* ../profile  */
+
+
+/* information  */
+
+.information ul {
+	margin-top: 25px;
+}
+.information ul li {
+	display: flex;
+	direction: row;
+	margin-bottom: 10px;
+}
+.information ul li h3 {
+	width: 91.5%;
+}
+
+.icon {
+	width: 8.5%;
+	height: 25px;
+	background-size: cover;
+	border: 0;
+	margin: auto 1px auto 10px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.university .icon,
+.school .icon {
+	background-image: url(./icon/graduation.png);
+	transform: scale(.88);
+}
+
+.live .icon {
+	background-image: url(./icon/live.png);
+	transform: scale(.7);
+}
+.from .icon {
+	background-image: url(./icon/location.png);
+	transform: scale(.7);
+}
+.single .icon {
+	background-image: url(./icon/single.png);
+	transform: scale(.7);
+}
+.instagram .icon {
+	background-image: url(./icon/instagram.png);
+	transform: scale(.7);
+}
+.linkedin .icon {
+	background-image: url(./icon/linkedin.png);
+	transform: scale(.7);
+}
+.snapchat .icon {
+	background-image: url(./icon/snapchat.png);
+	transform: scale(.7);
+}
+.more-information .icon {
+	background-image: url(./icon/more.png);
+	
+}
+
+.edit{
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid gray;
+	
+}
+.edit button{
+	margin: auto;
+	display: inline-block;
+	width: 100%;
+	height: 30px;
+	color: rgb(0, 110, 255);
+	background-color: lightblue;
+	border-radius: 5px;
+	font-size: 15px;
+}
+/* ../ information  */
+
+
+
+/* friends */
+
+.friend-name {
+	display: block;
+}
+
+
+.num-search {
+	margin: 15px 0;
+	display: flex;
+	justify-content: space-between;
+}
+.search {
+	margin-left: 45px;
+}
+
+.friends-list {
+	display: flex;
+	flex-direction: column;
+}
+.friend {
+	width: 32%;
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+}
+.list1:nth-child(2),
+.list2:nth-child(2) {
+	margin: 0 .5%;
+}
+
+.list1 {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 38px;
+	width: 100%;
+	justify-content: space-between;
+}
+.list2 {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	width: 100%;
+	justify-content: space-between;
+}
+.friend-pic {
+	width: 100%;
+	margin-bottom: 4px;
+}
+.friend-name {
+	text-align: left;
+	display: inline-block
+}
+
+.show-friends {
+	display: inline-block;
+	width: 100%;
+	margin: 50px 0 15px 0;
+	height: 28px;
+}
+
+
+/* posts */
+.post {
+	height: 115px;
+}
+.post-setting {
+	display: flex;
+	justify-content: space-between;
+}
+.set-btn,
+.filter-btn {
+	width: 28px;
+	height: 25px;
+	background-size: contain;
+	border: 0;
+	padding: 5px;
+	/* background-clip: border-box;
+	background-origin: padding-box; */
+}
+.filter-btn {
+	background-image: url(./icon/filter.png);
+}
+.set-btn {
+	background-image: url(./icon/setting.png);
+	margin-right: 5px;
+}
+.setting {
+	display: flex;
+	flex-direction: row;
+}
+
+
+/* ../ posts */
+
+
+
+.think {
+	display: flex;
+	justify-content: start;
+	height: 30px;
+	align-items: center;
+}
+
+.think .pic {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-image: url(./imges/profile.jpeg);
+	background-size: cover;
+	margin-left: 10px;
+}
+
+/* post-type  */
+.post-type {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+}
+.post-type li {
+	display: flex;
+
+}
+
+
+/* .post-type li span{
+	display: inline-block;
+} */
+.post-type .liveVedio,.personal,.postPic{
+	
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border: 0;
+	background-size: cover;
+	margin-left: 4px;
+	transform: scale(.9);
+	border: 0;
+	
+}
+.mr-l{
+	margin-right: 25px;
+	display: inline-block;
+}
+.mr-r{
+	margin-left: 25px;
+	display: inline-block;
+
+}
+
+.liveVedio{
+	background-image: url(./icon/icons.png);
+	background-position: 0 216px ;
+}
+.postPic{
+	background-image: url(./icon/icons.png);
+	background-position: 0 411px ;
+	
+}
+.personal{
+	background-image: url(./icon/icons.png);
+	background-position: 0 373px ;
+	
+}
+
+.know {
+	height: 40px;
+}
+.know ul {
+	display: flex;
+	flex-direction: row;
+	margin-top: 15px;
+}
+.know ul li {
+	background-color: rgb(201, 201, 201);
+	border-radius: 15px;
+	margin-left: 25px;
+	padding: 6px;
+	display: flex;
+	align-items: center;
+	/* text-align: center; */
+}
+.know ul li button {
+	width: 20px;
+	height: 20px;
+	background-color: gray;
+	border: 0;
+	background-size: cover;
+	transform: scale(.7);
+	margin-left: 6px;
+}
+.know ul li > button {
+	background-image: url(./icon/photo.png);
+}
+
+/* ../post-type  */
+
+/* post */
+.post-view{
+	height: 480px;
+	position: relative;
+}
+.post-header {
+	display: flex;
+	justify-content: start;
+	text-align: center;
+	
+}
+
+.post-header .pic {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-image: url(./imges/profile.jpeg);
+	background-size: cover;
+	margin-left: 10px;
+	text-align: center;
+}
+.post-header span {
+	margin: auto 0;
+}
+.post-header .more {
+	background-image: url(./icon/more.png);
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	margin-right: 28px;
+}
+
+.text p {
+	direction: ltr;
+}
+.post-pic-1 {
+
+	height: 320px;
+	margin: 10px 0;
+	display: grid;
+	grid-template-rows: 66% 33% ;
+}
+.sec-1{
+
+	background-image: url(./imges/post.jpg);
+	width: 100%;
+	background-size: cover;
+	margin:6px 0  3px 0;
+	background-repeat: no-repeat;
+
+	
+
+}
+ .sec-2{
+	display: flex;
+}
+/* .sec-21{
+	width: 33%;
+}  */
+
+.pic1{
+	background-image: url(./imges/post2.jpg);
+	background-size: cover;
+	width: 33%;
+	background-repeat: no-repeat;
+
+}
+.pic2{
+	background-image: url(./imges/post3.jpg);
+	background-size: cover;
+	width: 33%;
+	background-repeat: no-repeat;
+	margin: 0 3px;
+}
+.pic3{
+	background-image: url(./imges/post4.jpg);
+	
+	background-size: cover;
+	width: 33%;
+	background-repeat: no-repeat;
+
+}
+
+
+
+.post-pic-2 {
+	width: 100%;
+	background-image: url(./imges/post-pic1jpg.jpg);
+	background-size: cover;
+	height: 320px;
+	margin: 10px 0;
+	
+}
+.reactions ul {
+	display: flex;
+	justify-content: space-around;
+	padding: 5px;
+	border-top: 1px solid gray;
+	align-items: center;
+}
+.comments {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.reactions ul li {
+	display: flex;
+	align-items: center;
+}
+.reaction {
+	margin-right: 6px;
+}
+.like,
+.comment,
+.share {
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	border: 0;
+	/* margin: auto 0; */
+	background-color: #ffffff;
+}
+.like {
+	background-image: url(./icon/like.png);
+	transform: scale(1.08);
+}
+.comment {
+	background-image: url(./icon/coment.jpg);
+	transform: scale(.8);
+}
+.share {
+	background-image: url(./icon/share.jpg);
+	transform: scale(.8);
+}
+
+.reacOnLike{
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+	background-color:rgb(245, 245, 245);
+	border-radius:18px;
+	padding: 4px;
+	text-align: center;
+	display: none;
+	
+	z-index: 500;
+
+}
+.like:hover .reacOnLike {
+	display: flex;
+	/* background-color: red; */
+	/* transition: ease-in-out; */
+}
+.reacOnLike > span{
+	/* display: inline-block; */
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 1px;
+	transition: all .6s;
+	
+}
+.reacOnLike > span:hover{
+	transform: scale(1.6);
+	/* transition: ease-in; */
+}
+
+.like{
+	
+	background-image: url(./icon/likeREa.png);
+}
+.love{
+	background-image: url(./icon/love.jpg);
+	transform: scale(.9);
+
+
+}
+
+.supp{
+	
+	background-image: url(./icon/hug.png);
+	/* transform: scale(1.3); */
+	background-position: center;
+}
+.lugh{
+	background-image: url(./icon/lagh.jpg);
+}
+.shock{
+	
+	background-image: url(./icon/shock.png);
+	transform: scale(.9);
+}
+.cray{
+	background-image: url(./icon/sad.png);
+
+}
+.angry{
+	background-image: url(./icon/Angry.png);
+}
